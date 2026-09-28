@@ -1,0 +1,11 @@
+/* Progress — estilos generados a partir del diseño */
+
+.progress-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  z-index: 120;
+  background: linear-gradient(90deg,#2b4ff5,#9184d9,#b13ce8);
+}

@@ -1,0 +1,43 @@
+/* Metrics — estilos generados a partir del diseño */
+
+.metrics-1 {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(120deg,var(--color-section),var(--color-section-glow));
+  border-top: 1px solid #2b2e3d;
+  border-bottom: 1px solid #2b2e3d;
+}
+
+.metrics-2 {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(50% 120% at 80% 0%, rgba(76,83,151,.55), transparent 70%);
+}
+
+.metrics-3 {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: clamp(38px,5vw,62px) clamp(18px,4vw,32px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(130px,100%),1fr));
+  gap: clamp(20px,3vw,40px);
+}
+
+.metrics-4 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(30px,3.4vw,46px);
+  letter-spacing: -.03em;
+  line-height: 1;
+}
+
+.metrics-5 {
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--color-accent-300);
+}

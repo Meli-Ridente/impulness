@@ -1,0 +1,112 @@
+/* Services — estilos generados a partir del diseño */
+
+.services-1 {
+  position: relative;
+  padding: clamp(70px,9vw,124px) 0;
+}
+
+.services-2 {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(18px,4vw,32px);
+}
+
+.services-3 {
+  display: grid;
+  gap: 18px;
+  margin-bottom: clamp(32px,4vw,56px);
+}
+
+.services-4 {
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.services-5 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(30px,3.9vw,52px);
+  line-height: 1.06;
+  letter-spacing: -.03em;
+  margin: 18px 0 0;
+  max-width: 20ch;
+}
+
+.services-6 {
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--color-neutral-400);
+  margin: 0;
+  max-width: 60ch;
+}
+
+.services-7 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(300px,100%),1fr));
+  gap: clamp(14px,1.6vw,22px);
+}
+
+.services-8 {
+  border-radius: var(--radius-lg);
+  padding: clamp(20px,2.2vw,30px);
+  background: linear-gradient(160deg,#1c1f2e,#191b28);
+  border: 1px solid #2b2e3d;
+  transition: transform .4s cubic-bezier(.2,.7,.2,1),border-color .4s ease,box-shadow .4s ease;
+}
+.services-8:hover {
+  border-color: var(--color-accent-700);
+  box-shadow: 0 22px 50px rgba(0,0,0,.5);
+}
+
+.services-9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.services-10 {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: grid;
+  place-items: center;
+  background: rgba(145,132,217,.12);
+  border: 1px solid rgba(145,132,217,.28);
+  font-size: 17px;
+  color: var(--color-accent-200);
+}
+
+.services-11 {
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.services-12 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: -.02em;
+  margin: 20px 0 10px;
+}
+
+.services-13 {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--color-neutral-400);
+}
+
+.services-14 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 18px;
+}
+
+.services-15 {
+  font-size: 11px;
+}

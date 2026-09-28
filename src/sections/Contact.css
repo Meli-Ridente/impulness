@@ -1,0 +1,307 @@
+/* Contact — estilos generados a partir del diseño */
+
+.contact-1 {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(70px,9vw,120px) 0;
+}
+
+.contact-2 {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(40% 50% at 78% 30%, rgba(93,82,148,.32), transparent 70%);
+}
+
+.contact-3 {
+  position: absolute;
+  inset: -16% 0 -6%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.contact-4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: lighten;
+  opacity: .3;
+  filter: saturate(.7);
+  animation: impZoom 40s ease-in-out infinite reverse;
+}
+
+.contact-5 {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,var(--color-bg),rgba(22,24,38,.72) 45%,var(--color-bg));
+}
+
+.contact-6 {
+  position: absolute;
+  right: -4%;
+  top: 6%;
+  width: min(30%,330px);
+  pointer-events: none;
+}
+
+.contact-7 {
+  display: block;
+  width: 100%;
+  opacity: .85;
+  animation: impOrbDrift 11s ease-in-out infinite;
+  animation-delay: -2s;
+  filter: drop-shadow(0 30px 60px rgba(43,79,245,.3));
+}
+
+.contact-8 {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(18px,4vw,32px);
+}
+
+.contact-9 {
+  max-width: 56ch;
+  margin-bottom: 38px;
+}
+
+.contact-10 {
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.contact-11 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(30px,3.9vw,52px);
+  line-height: 1.06;
+  letter-spacing: -.03em;
+  margin: 18px 0 14px;
+}
+
+.contact-12 {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--color-neutral-400);
+}
+
+.contact-13 {
+  display: grid;
+  gap: clamp(16px,2vw,26px);
+  align-items: start;
+}
+.contact-13 { grid-template-columns: minmax(0, 1fr); }
+@media (min-width: 900px) { .contact-13 { grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); } }
+
+.contact-14 {
+  border-radius: var(--radius-lg);
+  padding: clamp(20px,2.4vw,34px);
+  background: linear-gradient(160deg,#1c1f2e,#191b28);
+  border: 1px solid #2b2e3d;
+}
+
+.contact-15 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(220px,100%),1fr));
+  gap: 14px;
+}
+
+.contact-16 {
+  margin-top: 22px;
+  font-size: 13px;
+  color: var(--color-neutral-400);
+}
+
+.contact-17 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(210px,100%),1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.contact-18 {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 13px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid #2b2e3d;
+  background: #1a1c29;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+.contact-18:hover {
+  border-color: var(--color-accent-700);
+  background: #1d2030;
+}
+
+.contact-19 {
+  margin-top: 2px;
+  accent-color: var(--color-accent);
+}
+
+.contact-20 {
+  display: block;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.contact-21 {
+  display: block;
+  font-size: 12.5px;
+  color: var(--color-neutral-500);
+}
+
+.contact-22 {
+  margin-top: 22px;
+  display: block;
+}
+
+.contact-23 {
+  width: 100%;
+  resize: vertical;
+}
+
+.contact-24 {
+  margin-top: 24px;
+  border-radius: 999px;
+  padding: 14px 24px;
+  font-size: 15px;
+  background: linear-gradient(120deg,rgba(43,79,245,.22),rgba(177,60,232,.22));
+  transition: box-shadow .35s ease;
+}
+.contact-24:hover {
+  box-shadow: 0 0 34px rgba(145,132,217,.4);
+}
+
+.contact-25 {
+  margin-top: 14px;
+  font-size: 12.5px;
+  color: var(--color-neutral-500);
+}
+
+.contact-26 {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-27 {
+  border-radius: var(--radius-lg);
+  padding: clamp(20px,2.2vw,28px);
+  background: linear-gradient(160deg,#20223a,#191b28);
+  border: 1px solid var(--color-accent-800);
+}
+
+.contact-28 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 16px;
+}
+
+.contact-29 {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #2b2e3d;
+  color: var(--color-text);
+}
+.contact-29:hover {
+  color: var(--color-accent-200);
+}
+
+.contact-30 {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-md);
+  display: grid;
+  place-items: center;
+  background: rgba(145,132,217,.14);
+  border: 1px solid rgba(145,132,217,.28);
+  font-size: 14px;
+}
+
+.contact-31 {
+  display: block;
+  font-size: 11.5px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--color-neutral-500);
+}
+
+.contact-32 {
+  display: block;
+  font-size: 14.5px;
+}
+
+.contact-33 {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  color: var(--color-text);
+}
+.contact-33:hover {
+  color: var(--color-accent-200);
+}
+
+.contact-34 {
+  border-radius: var(--radius-lg);
+  padding: clamp(20px,2.2vw,28px);
+  background: linear-gradient(160deg,#1c1f2e,#191b28);
+  border: 1px solid #2b2e3d;
+}
+
+.contact-35 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0 0 14px;
+}
+
+.contact-36 {
+  display: grid;
+  gap: 13px;
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--color-neutral-400);
+}
+
+.contact-37 {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-38 {
+  color: var(--color-accent);
+}
+
+.contact-39 {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #2b2e3d;
+  font-size: 13px;
+}
+
+.contact-40 {
+  color: var(--color-neutral-500);
+}
+
+.contact-41 {
+  color: var(--color-accent-200);
+}
+
+/* El texto siempre por encima del orbe; en móvil el orbe es más pequeño y discreto */
+.contact-8 { z-index: 1; }
+@media (max-width: 619px) {
+  .contact-6 { width: 34%; top: 1%; right: -10%; }
+  .contact-7 { opacity: .45; }
+}

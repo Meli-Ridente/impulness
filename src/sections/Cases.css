@@ -1,0 +1,217 @@
+/* Cases — estilos generados a partir del diseño */
+
+.cases-1 {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(70px,9vw,120px) 0;
+  background: linear-gradient(180deg,#171927,var(--color-bg));
+}
+
+.cases-2 {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(18px,4vw,32px);
+}
+
+/* Capas del fondo del hero, fundidas arriba y abajo para enlazar con las secciones vecinas */
+.cases-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(180deg,transparent,#000 22%,#000 80%,transparent);
+  mask-image: linear-gradient(180deg,transparent,#000 22%,#000 80%,transparent);
+}
+
+.cases-3 {
+  max-width: 60ch;
+}
+
+.cases-4 {
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.cases-5 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(30px,3.9vw,52px);
+  line-height: 1.06;
+  letter-spacing: -.03em;
+  margin: 18px 0 14px;
+}
+
+.cases-6 {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--color-neutral-400);
+}
+
+.cases-7 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 30px 0 26px;
+}
+
+.cases-8 {
+  padding: 9px 17px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #2b2e3d;
+  color: var(--color-neutral-400);
+  transition: all .25s ease;
+}
+.cases-8:hover {
+  border-color: var(--color-accent-700);
+  color: var(--color-accent-200);
+}
+
+.cases-9 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(320px,100%),1fr));
+  gap: clamp(14px,1.6vw,22px);
+}
+
+.cases-10 {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid #2b2e3d;
+  background: linear-gradient(170deg,#1c1f2e,#191b28);
+  transition: transform .4s cubic-bezier(.2,.7,.2,1),border-color .4s ease,box-shadow .4s ease;
+}
+.cases-10:hover {
+  transform: translateY(-6px);
+  border-color: var(--color-accent-700);
+  box-shadow: 0 26px 60px rgba(0,0,0,.55);
+}
+
+.cases-11 {
+  position: relative;
+  aspect-ratio: 16/10;
+}
+
+.cases-12 {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  display: flex;
+  gap: 6px;
+  pointer-events: none;
+}
+
+.cases-13 {
+  border-radius: 999px;
+  font-size: 11px;
+}
+
+.cases-14 {
+  padding: clamp(18px,2vw,26px);
+}
+
+.cases-15 {
+  font-size: 11.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-accent-300);
+}
+
+.cases-16 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 21px;
+  letter-spacing: -.02em;
+  margin: 9px 0 10px;
+}
+
+.cases-17 {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--color-neutral-400);
+}
+
+.cases-18 {
+  margin-top: 44px;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+  -webkit-mask-image: linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);
+}
+
+.cases-19 {
+  display: flex;
+  width: max-content;
+  animation: impMarquee 26s linear infinite;
+}
+
+.cases-20 {
+  display: flex;
+  gap: clamp(40px,6vw,90px);
+  padding-right: clamp(40px,6vw,90px);
+  align-items: center;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(15px,1.4vw,20px);
+  letter-spacing: .16em;
+  color: var(--color-neutral-700);
+}
+
+/* botón de filtro activo */
+.cases-8[aria-pressed="true"] {
+  background: rgba(145,132,217,.16); border-color: var(--color-accent-700); color: var(--color-accent-200);
+}
+
+/* capturas de web: se ancla arriba para que se vea la cabecera */
+.cases-11 .image-slot-img {
+  object-position: top;
+}
+
+/* enlace a la web publicada; su ::after hace clicable toda la tarjeta */
+.cases-10 {
+  position: relative;
+}
+.cases-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin-top: 14px;
+}
+.cases-link {
+  display: inline-flex;
+  gap: 6px;
+  font-size: 13.5px;
+  font-weight: 500;
+  color: var(--color-accent-300);
+  text-decoration: none;
+  transition: color .25s ease;
+}
+.cases-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.cases-10:hover .cases-link,
+.cases-link:focus-visible {
+  color: var(--color-accent-200);
+}
+/* varios enlaces: cada uno clicable por separado, sin cubrir toda la tarjeta */
+.cases-links.is-multi .cases-link::after {
+  content: none;
+}
+/* enlace pendiente (aún sin URL) */
+.cases-link.is-empty {
+  cursor: default;
+  opacity: .5;
+}
+.cases-link.is-empty::after {
+  content: none;
+}

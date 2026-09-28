@@ -1,0 +1,73 @@
+/* Footer — estilos generados a partir del diseño */
+
+.footer-1 {
+  border-top: 1px solid #22242f;
+  background: #131523;
+  padding: clamp(44px,6vw,72px) 0 28px;
+}
+
+.footer-2 {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(18px,4vw,32px);
+}
+
+.footer-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(230px,100%),1fr));
+  gap: clamp(24px,3vw,48px);
+}
+
+.footer-4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-5 {
+  height: 24px;
+  width: auto;
+  display: block;
+}
+
+.footer-6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: .14em;
+}
+
+.footer-7 {
+  margin: 16px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-neutral-500);
+  max-width: 32ch;
+}
+
+.footer-8 {
+  font-size: 11.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--color-neutral-500);
+  margin-bottom: 14px;
+}
+
+.footer-9 {
+  display: grid;
+  gap: 9px;
+  font-size: 14px;
+}
+
+.footer-10 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  margin-top: clamp(30px,4vw,52px);
+  padding-top: 20px;
+  border-top: 1px solid #22242f;
+  font-size: 12.5px;
+  color: var(--color-neutral-600);
+}

@@ -1,0 +1,108 @@
+/* Testimonials — estilos generados a partir del diseño */
+
+.testimonials-1 {
+  padding: clamp(60px,8vw,110px) 0;
+  border-top: 1px solid #22242f;
+  background: #171927;
+}
+
+.testimonials-2 {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 clamp(18px,4vw,32px);
+}
+
+.testimonials-3 {
+  max-width: 48ch;
+  margin-bottom: 34px;
+}
+
+.testimonials-4 {
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.testimonials-5 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(28px,3.4vw,46px);
+  line-height: 1.07;
+  letter-spacing: -.03em;
+  margin: 18px 0 0;
+}
+
+.testimonials-6 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(min(280px,100%),1fr));
+  gap: clamp(14px,1.6vw,22px);
+}
+
+.testimonials-7 {
+  margin: 0;
+  border-radius: var(--radius-lg);
+  padding: clamp(20px,2.2vw,30px);
+  background: linear-gradient(160deg,#1c1f2e,#191b28);
+  border: 1px solid #2b2e3d;
+  transition: border-color .35s ease,transform .35s ease;
+}
+.testimonials-7:hover {
+  border-color: var(--color-accent-700);
+  transform: translateY(-4px);
+}
+
+.testimonials-8 {
+  color: var(--color-accent);
+  font-size: 14px;
+  letter-spacing: .2em;
+}
+
+.testimonials-9 {
+  margin: 16px 0 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--color-neutral-300);
+  font-style: italic;
+}
+
+.testimonials-10 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid #2b2e3d;
+}
+
+.testimonials-11 {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(140deg,#2b4ff5,#9184d9);
+}
+
+.testimonials-12 {
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.testimonials-13 {
+  font-size: 12.5px;
+  color: var(--color-neutral-500);
+}
+
+.testimonials-14 {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(140deg,#9184d9,#b13ce8);
+}
+
+.testimonials-15 {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}

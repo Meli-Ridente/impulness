@@ -1,0 +1,27 @@
+/* FloatingWhatsApp — estilos generados a partir del diseño */
+
+.floatingwhatsapp-1 {
+  position: fixed;
+  right: clamp(16px,3vw,28px);
+  bottom: clamp(16px,3vw,28px);
+  z-index: 115;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 13px 20px;
+  border-radius: 999px;
+  background: linear-gradient(120deg,#1e2136,#232640);
+  border: 1px solid var(--color-accent-700);
+  color: var(--color-text);
+  font-size: 14px;
+  animation: impPulse 3.4s ease-in-out infinite;
+  transition: transform .3s ease;
+}
+.floatingwhatsapp-1:hover {
+  transform: translateY(-2px);
+}
+
+.floatingwhatsapp-2 {
+  font-size: 15px;
+  color: var(--color-accent-200);
+}
