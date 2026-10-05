@@ -10,13 +10,14 @@ import cbvem from '../assets/casos/cbvem.jpg'
 import sparks from '../assets/Header_Sparks.png'
 import truestudio from '../assets/Header_Truestudio.png'
 import casacelia from '../assets/Header_CasaCelia.png'
+import ads from '../assets/ads.png'
 import dpana from "../assets/D'pana_D'pana.png"
 
 export const imageSlots = {
   'caso-cbvem': cbvem,
   'caso-sparks': sparks,
   'caso-casacelia': casacelia,
-  'caso-adscoches': null,
+  'caso-adscoches': ads,
   'caso-truestudio': truestudio,
   'caso-dpana': dpana,
 }

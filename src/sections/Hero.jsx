@@ -52,7 +52,7 @@ export default function Hero() {
               <div className="hero-27"></div>
             </div>
             <div className="hero-28">
-              <span className="hero-29">{t("6 marcas", "6 brands")}</span>
+              <span className="hero-29">{t("8 marcas", "8 brands")}</span>
               {" "}
               <span>{t("— que ya escalan con Impulness", "— already scaling with Impulness")}</span>
             </div>

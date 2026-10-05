@@ -50,6 +50,8 @@
 }
 
 .plans-8 {
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-lg);
   padding: clamp(22px,2.4vw,34px);
   background: linear-gradient(160deg,#1c1f2e,#191b28);
@@ -96,7 +98,7 @@
 .plans-14 {
   display: grid;
   gap: 11px;
-  margin-top: 24px;
+  margin: 24px 0 26px;
   padding-top: 22px;
   border-top: 1px solid #2b2e3d;
   font-size: 14.5px;
@@ -114,13 +116,15 @@
 }
 
 .plans-17 {
-  margin-top: 26px;
+  margin-top: auto;
   border-radius: 999px;
   padding: 12px 20px;
 }
 
 .plans-18 {
   position: relative;
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-lg);
   padding: clamp(22px,2.4vw,34px);
   background: linear-gradient(160deg,#20223a,#191b28);
@@ -141,7 +145,7 @@
 }
 
 .plans-20 {
-  margin-top: 26px;
+  margin-top: auto;
   border-radius: 999px;
   padding: 12px 20px;
   background: linear-gradient(120deg,rgba(43,79,245,.2),rgba(177,60,232,.2));

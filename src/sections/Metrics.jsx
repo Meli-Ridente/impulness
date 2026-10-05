@@ -12,13 +12,13 @@ export default function Metrics() {
       <div className="metrics-3">
         <Fx as="div" rv>
           <div className="metrics-4">
-            <Counter to={3} dec={0} />
+            <Counter to={6} dec={0} />
           </div>
           <div className="metrics-5">{t("Campañas activas gestionadas ahora mismo", "Active campaigns managed right now")}</div>
         </Fx>
         <Fx as="div" rv delay={90}>
           <div className="metrics-4">
-            <Counter to={5} dec={0} />
+            <Counter to={6} dec={0} />
           </div>
           <div className="metrics-5">{t("Sectores distintos, de la cosmética a la construcción", "Different industries, from cosmetics to construction")}</div>
         </Fx>

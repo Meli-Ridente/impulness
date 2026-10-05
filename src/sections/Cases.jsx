@@ -43,6 +43,10 @@ const CASES = [
     sector: ['Venta de coches', 'Car dealership'],
     services: ['Meta Ads', ['Redes', 'Social']],
     cat: 'ads redes',
+    links: [
+      { type: 'web', url: 'https://ads-inversiones.es/es' },
+      { type: 'instagram', url: 'https://www.instagram.com/somos__ads' },
+    ],
   },
   {
     id: 'caso-truestudio',

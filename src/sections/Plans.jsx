@@ -45,7 +45,11 @@ export default function Plans() {
               </div>
               <div className="plans-15">
                 <span className="plans-16">✓</span>
-                <span>{t("1 campaña mensual en Meta Ads + optimización semanal", "1 monthly Meta Ads campaign + weekly optimisation")}</span>
+                <span>{t("1 campaña mensual en Meta Ads + revisiones", "1 monthly Meta Ads campaign + reviews")}</span>
+              </div>
+              <div className="plans-15">
+                <span className="plans-16">✓</span>
+                <span>{t("Gestión de DMs y comentarios", "DM and comment management")}</span>
               </div>
             </div>
             <a className="btn btn-secondary btn-block plans-17" href={WHATSAPP_URL} target="_blank" rel="noopener">
@@ -75,15 +79,7 @@ export default function Plans() {
               </div>
               <div className="plans-15">
                 <span className="plans-16">✓</span>
-                <span>{t("Gestión de DMs y comentarios", "DM and comment management")}</span>
-              </div>
-              <div className="plans-15">
-                <span className="plans-16">✓</span>
-                <span>{t("Informe mensual con métricas", "Monthly report with metrics")}</span>
-              </div>
-              <div className="plans-15">
-                <span className="plans-16">✓</span>
-                <span>{t("Creative testing en Meta Ads", "Creative testing on Meta Ads")}</span>
+                <span>{t("1 campaña mensual en Meta Ads + optimización semanal", "1 monthly Meta Ads campaign + weekly optimisation")}</span>
               </div>
             </div>
             <a className="btn btn-primary btn-block plans-20" href={WHATSAPP_URL} target="_blank" rel="noopener">
