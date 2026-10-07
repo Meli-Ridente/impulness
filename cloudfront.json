@@ -1,0 +1,36 @@
+{
+  "DistributionConfig": {
+    "CallerReference": "impulness-web-$(date +%s)",
+    "Origins": {
+      "Quantity": 1,
+      "Items": [
+        {
+          "Id": "impulness-web-origin",
+          "DomainName": "YOUR_S3_BUCKET_NAME.s3.amazonaws.com",
+          "CustomOriginConfig": {
+            "HTTPPort": 80,
+            "HTTPSPort": 443,
+            "OriginProtocolPolicy": "https-only"
+          }
+        }
+      ]
+    },
+    "DefaultCacheBehavior": {
+      "TargetOriginId": "impulness-web-origin",
+      "ViewerProtocolPolicy": "redirect-to-https",
+      "AllowedMethods": {
+        "Quantity": 2,
+        "Items": ["GET", "HEAD"],
+        "CachedMethods": {
+          "Quantity": 2,
+          "Items": ["GET", "HEAD"]
+        }
+      },
+      "MinTTL": 0,
+      "DefaultTTL": 3600,
+      "MaxTTL": 86400
+    },
+    "Enabled": true,
+    "Comment": "Impulness Web CloudFront Distribution"
+  }
+}
