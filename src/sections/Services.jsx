@@ -38,7 +38,7 @@ export default function Services() {
           <Fx as="article" rv variant="settle" tilt className="card fx-host services-8">
             <div className="services-9">
               <div className="services-10"><Icon name="growth" /></div>
-              <span className="tag tag-accent services-11">{t("Seguimiento real", "Real tracking")}</span>
+              <span className="tag tag-accent services-11">{t("Incluido en tu plan de redes", "Included in your social media plan")}</span>
             </div>
             <h3 className="services-12">Meta Ads</h3>
             <p className="services-13">
@@ -83,7 +83,7 @@ export default function Services() {
           <Fx as="article" rv delay={270} variant="settle" tilt className="card fx-host services-8">
             <div className="services-9">
               <div className="services-10"><Icon name="camera" /></div>
-              <span className="tag tag-accent services-11">{t("Contenido propio", "Original content")}</span>
+              <span className="tag tag-accent services-11">{t("Desde 60€/hora", "From 60€/hour")}</span>
             </div>
             <h3 className="services-12">{t("Fotografía", "Photography")}</h3>
             <p className="services-13">

@@ -311,3 +311,12 @@ section .cases-3,
 section .reels-3,
 section .testimonials-3,
 section .contact-9 { max-width: none; }
+
+/* etiquetas (Meta Ads, Web, Redes…): misma esquina que los botones.
+   Los botones miden ~44px de alto con 10px de radio; estas miden ~24px,
+   así que con 10px quedaban como pastilla. 6px da la misma forma. */
+.tag.tag-accent,
+.tag.tag-neutral {
+  border-radius: 6px;
+  padding: 5px 10px;
+}

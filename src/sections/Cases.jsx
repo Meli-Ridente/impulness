@@ -8,9 +8,18 @@ import './Cases.css'
 // cat → filtros: web · ads · redes
 const CASES = [
   {
+    id: 'caso-cymbuilding',
+    name: 'Cym Building',
+    sector: ['Constructora · Madrid', 'Construction · Madrid'],
+    services: ['Web'],
+    cat: 'web',
+    comingSoon: true, // proyecto en marcha: tarjeta de "Próximamente"
+    links: [],
+  },
+  {
     id: 'caso-sparks',
     name: 'Sparks Insumos',
-    sector: ['Cosmética al por mayor', 'Wholesale cosmetics'],
+    sector: ['Mayoristas · Argentina', 'Wholesale · Argentina'],
     services: ['Meta Ads', ['Redes', 'Social'], 'Web'],
     cat: 'web ads redes',
     links: [
@@ -48,7 +57,7 @@ const CASES = [
   {
     id: 'caso-adscoches',
     name: 'ADS Coches',
-    sector: ['Venta de coches', 'Car dealership'],
+    sector: ['Venta de coches · Madrid', 'Car dealership · Madrid'],
     services: ['Meta Ads', ['Redes', 'Social']],
     cat: 'ads redes',
     links: [
@@ -59,7 +68,7 @@ const CASES = [
   {
     id: 'caso-truestudio',
     name: 'Truestudio',
-    sector: null,
+    sector: ['Estética · Barcelona', 'Beauty · Barcelona'],
     services: [['Redes', 'Social'], 'Meta Ads'],
     cat: 'ads redes',
     links: [{ type: 'instagram', url: 'https://www.instagram.com/truestudio.es/' }],
@@ -67,7 +76,7 @@ const CASES = [
   {
     id: 'caso-dpana',
     name: "D'pana",
-    sector: null,
+    sector: ['Local de empanadas · Barcelona', 'Empanada shop · Barcelona'],
     services: [],
     cat: '',
     links: [
@@ -210,7 +219,13 @@ export default function Cases() {
             {CASES.map((c) => (
               <Fx key={c.id} as="article" cat={c.cat} filter={filter} className="fx-host cases-10">
                 <div className="cases-11">
-                  <ImageSlot id={c.id} placeholder={`${t("Captura de", "Screenshot of")} ${c.name}`} />
+                  {c.comingSoon ? (
+                    <div className="cases-soon">
+                      <span className="cases-soon-label">{t("Próximamente", "Coming soon")}</span>
+                    </div>
+                  ) : (
+                    <ImageSlot id={c.id} placeholder={`${t("Captura de", "Screenshot of")} ${c.name}`} />
+                  )}
                   <div className="cases-12">
                     {c.services.map((s, j) => (
                       <span key={j} className={`tag ${j === 0 ? "tag-accent" : "tag-neutral"} cases-13`}>{tr(s)}</span>
@@ -220,6 +235,7 @@ export default function Cases() {
                 <div className="cases-14">
                   {c.sector && <div className="cases-15">{tr(c.sector)}</div>}
                   <h3 className="cases-16">{c.name}</h3>
+                  {c.comingSoon && <p className="cases-17">{t("Estamos trabajando en este proyecto. Muy pronto podrás verlo aquí.", "We're working on this project. You'll be able to see it here very soon.")}</p>}
                   {c.links?.length > 0 && (
                     <div className={`cases-links${c.links.length > 1 ? " is-multi" : ""}`}>
                       {c.links.map((l) => {
@@ -230,7 +246,7 @@ export default function Cases() {
                           </a>
                         ) : (
                           <a key={l.type} className="cases-link is-empty" aria-disabled="true">
-                            {label} <span aria-hidden="true">↗</span>
+                            {label} <span className="cases-link-soon">· {t("próximamente", "coming soon")}</span>
                           </a>
                         )
                       })}

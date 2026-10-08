@@ -320,3 +320,9 @@
   inset: 0;
   background: rgba(203,189,252,.68);
 }
+
+/* móvil: "Qué incluye tu auditoría gratis" va antes del formulario */
+@media (max-width: 899px) {
+  .contact-26 { display: contents; }
+  .contact-34 { order: -1; }
+}

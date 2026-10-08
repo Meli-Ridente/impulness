@@ -376,3 +376,34 @@
   inset: 0;
   background: rgba(203,189,252,.68);
 }
+
+/* enlace pendiente: "Ver web · próximamente" en una sola línea, mismo estilo */
+.cases-link.is-empty {
+  opacity: .6;
+}
+.cases-link-soon {
+  font-weight: 500;
+}
+
+/* tarjeta de proyecto en marcha: fondo gris y píldora como el botón de WhatsApp */
+.cases-soon {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #e9e8ee;
+}
+.cases-soon-label {
+  padding: 8px 14px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  box-shadow: 0 8px 20px rgba(42,67,255,.3);
+  animation: impPulseBlue 3.4s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .cases-soon-label { animation: none; }
+}

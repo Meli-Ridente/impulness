@@ -55,6 +55,19 @@ export default function Testimonials() {
               </div>
             </footer>
           </Fx>
+          <Fx as="blockquote" rv delay={300} variant="settle" className="testimonials-7">
+            <div className="testimonials-8">★★★★★</div>
+            <p className="testimonials-9">
+              “Estamos satisfechos con el servicio de los chicos de Impulness, muy organizados, atentos a todo como si el negocio también es suyo 🫶🏻 Trabajamos a distancia e igual tenemos muy buenos resultados, con la publicación de contenido y con la publicidad / Ads. Nos encantaría estar más cerca porque su equipo para grabar es profesional y el contenido que hacen tiene muy buena calidad, además de tener ideas muy creativas y estar actualizados con todas las tendencias y fechas importantes para los negocios. Muy contentos, gracias chicos 🥰✨”
+            </p>
+            <footer className="testimonials-10">
+              <span className="testimonials-11" aria-hidden="true">S</span>
+              <div>
+                <div className="testimonials-12">Sparks Insumos</div>
+                <div className="testimonials-13">{t("Mayoristas", "Wholesale")} · Argentina</div>
+              </div>
+            </footer>
+          </Fx>
         </div>
       </div>
     </section>
