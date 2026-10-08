@@ -1,4 +1,4 @@
-/* FloatingWhatsApp — estilos generados a partir del diseño */
+/* FloatingWhatsApp — píldora azul eléctrico */
 
 .floatingwhatsapp-1 {
   position: fixed;
@@ -8,20 +8,29 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 13px 20px;
-  border-radius: 999px;
-  background: linear-gradient(120deg,#1e2136,#232640);
-  border: 1px solid var(--color-accent-700);
-  color: var(--color-text);
-  font-size: 14px;
-  animation: impPulse 3.4s ease-in-out infinite;
-  transition: transform .3s ease;
+  padding: 14px 22px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 14px 32px rgba(42,67,255,.38);
+  animation: impPulseBlue 3.4s ease-in-out infinite;
+  transition: transform .3s ease, background .3s ease;
 }
 .floatingwhatsapp-1:hover {
+  color: #fff;
+  background: var(--blue-600);
   transform: translateY(-2px);
 }
 
 .floatingwhatsapp-2 {
-  font-size: 15px;
-  color: var(--color-accent-200);
+  font-size: 16px;
+}
+
+@keyframes impPulseBlue {
+  0% { box-shadow: 0 14px 32px rgba(42,67,255,.38), 0 0 0 0 rgba(42,67,255,.4); }
+  70% { box-shadow: 0 14px 32px rgba(42,67,255,.38), 0 0 0 16px rgba(42,67,255,0); }
+  100% { box-shadow: 0 14px 32px rgba(42,67,255,.38), 0 0 0 0 rgba(42,67,255,0); }
 }

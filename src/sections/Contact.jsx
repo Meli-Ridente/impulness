@@ -1,4 +1,5 @@
 import Fx from '../components/Fx'
+import ContactIcon from '../components/ContactIcon'
 import { WHATSAPP_URL } from '../config'
 import orb from '../assets/orb.webp'
 import silk from '../assets/silk.webp'
@@ -11,11 +12,9 @@ export default function Contact() {
   const { onSubmit, sent } = useWhatsAppForm()
 
   return (
-    <section className="contact-1" id="contacto">
-      <div className="contact-2"></div>
+    <section className="contact-1 bg-blobs" id="contacto">
       <Fx as="div" parallax={.14} className="contact-3">
         <img className="contact-4" src={silk} alt="" loading="lazy" decoding="async" />
-        <div className="contact-5"></div>
       </Fx>
       <Fx as="div" parallax={-.2} className="contact-6">
         <img className="contact-7" src={orb} alt="" loading="lazy" decoding="async" />
@@ -23,7 +22,10 @@ export default function Contact() {
       <div className="contact-8">
         <Fx as="div" rv className="contact-9">
           <div className="tag tag-accent contact-10">{t("Auditoría gratis · cupos limitados", "Free audit · limited slots")}</div>
-          <h2 className="contact-11">{t("Hablemos de tu proyecto.", "Let's talk about your project.")}</h2>
+          <h2 className="contact-11">
+            {t("¿Y si lo hacemos", "What if we do it")}{" "}
+            <span className="hl hl-plum">{t("nosotros?", "for you?")}</span>
+          </h2>
           <p className="contact-12">
             {t("Cuéntanos qué necesitas y te respondemos por WhatsApp con una propuesta clara, sin compromiso.", "Tell us what you need and we'll reply on WhatsApp with a clear proposal, no strings attached.")}
           </p>
@@ -86,29 +88,29 @@ export default function Contact() {
             <Fx as="button" magnet className="btn btn-primary btn-block contact-24" type="submit">
               {t("Enviar por WhatsApp →", "Send by WhatsApp →")}
             </Fx>
-            <div className="contact-25" style={sent ? { color: "#d2cefd" } : undefined}>
+            <div className="contact-25" style={sent ? { color: "var(--blue)" } : undefined}>
               {sent ? t("Abriendo WhatsApp con tus datos… si no se abre, escríbenos al +34 684 343 996.", "Opening WhatsApp with your details… if it does not open, message us at +34 684 343 996.") : t("Se abre WhatsApp con tus datos listos para enviar. Sin compromiso.", "Opens WhatsApp with your details ready to send. No commitment.")}
             </div>
           </Fx>
           <Fx as="aside" rv delay={120} variant="expand" className="contact-26">
-            <div className="contact-27">
+            <div className="contact-27 theme-dark">
               <h3 className="contact-28">{t("Contacto directo", "Direct contact")}</h3>
               <a className="contact-29" href={WHATSAPP_URL} target="_blank" rel="noopener">
-                <span className="contact-30">✆</span>
+                <span className="contact-30"><ContactIcon name="whatsapp" /></span>
                 <span>
                   <span className="contact-31">WhatsApp</span>
                   <span className="contact-32">+34 684 343 996</span>
                 </span>
               </a>
               <a className="contact-29" href="mailto:impulness.es@gmail.com">
-                <span className="contact-30">✉</span>
+                <span className="contact-30"><ContactIcon name="mail" /></span>
                 <span>
                   <span className="contact-31">Email</span>
                   <span className="contact-32">impulness.es@gmail.com</span>
                 </span>
               </a>
               <a className="contact-33" href="https://www.instagram.com/impulness.es/" target="_blank" rel="noopener">
-                <span className="contact-30">◎</span>
+                <span className="contact-30"><ContactIcon name="instagram" /></span>
                 <span>
                   <span className="contact-31">Instagram</span>
                   <span className="contact-32">@impulness.es</span>

@@ -1,4 +1,4 @@
-/* Nav — estilos generados a partir del diseño */
+/* Nav — barra clara sobre lavanda, marca en minúsculas como en los posts */
 
 .nav-1 {
   position: fixed;
@@ -6,15 +6,15 @@
   left: 0;
   right: 0;
   z-index: 110;
-  transition: padding .35s ease, background .35s ease, backdrop-filter .35s ease;
+  transition: padding .35s ease, background .35s ease, backdrop-filter .35s ease, box-shadow .35s ease;
   padding: 18px 0;
 }
 .nav-1.is-scrolled {
   padding: 10px 0;
-  background: rgba(22,24,38,.78);
+  background: rgba(24,18,34,.7);
   backdrop-filter: blur(14px) saturate(1.2);
   -webkit-backdrop-filter: blur(14px) saturate(1.2);
-  border-bottom: 1px solid rgba(43,46,61,.7);
+  box-shadow: 0 8px 28px rgba(20,0,35,.3);
 }
 
 .nav-2 {
@@ -42,20 +42,20 @@
 }
 
 .nav-5 {
-  font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 17px;
-  letter-spacing: .14em;
-  color: var(--color-text);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 21px;
+  letter-spacing: -.04em;
+  color: #fff;
 }
 
 .nav-6 {
   align-items: center;
   gap: 2px;
   padding: 5px;
-  border-radius: 999px;
-  background: rgba(35,37,50,.6);
-  border: 1px solid #2b2e3d;
+  border-radius: 10px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.16);
   backdrop-filter: blur(10px);
 }
 .nav-6 { display: none; }
@@ -63,51 +63,45 @@
 
 .nav-7 {
   padding: 8px 15px;
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 13.5px;
-  color: var(--color-neutral-300);
+  font-weight: 500;
+  color: rgba(255,255,255,.88);
   transition: all .25s ease;
 }
 .nav-7:hover {
-  background: rgba(145,132,217,.14);
-  color: var(--color-accent-200);
+  background: rgba(255,255,255,.14);
+  color: #fff;
 }
 
 .nav-8 {
   padding: 7px 12px;
-  border-radius: 999px;
-  background: transparent;
-  border: 1px solid #2b2e3d;
-  color: var(--color-neutral-400);
+  border-radius: 10px;
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  color: #fff;
   font-family: var(--font-body);
   font-size: 12px;
-  letter-spacing: .06em;
+  font-weight: 600;
+  letter-spacing: .1em;
   cursor: pointer;
   transition: all .25s ease;
 }
 .nav-8:hover {
-  border-color: var(--color-accent-600);
-  color: var(--color-accent-200);
+  background: rgba(255,255,255,.2);
 }
 
 .nav-9 {
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 13.5px;
-  padding: 9px 18px;
-  background: linear-gradient(120deg,rgba(43,79,245,.18),rgba(177,60,232,.18));
-  transition: box-shadow .3s ease, transform .3s ease;
-  animation: impGlow 3.6s ease-in-out infinite;
-}
-.nav-9:hover {
-  box-shadow: 0 0 26px rgba(145,132,217,.4);
-  transform: translateY(-1px);
+  padding: 10px 18px;
 }
 
 /* Móvil: que logo, idioma y botón quepan en una línea */
 @media (max-width: 480px) {
   .nav-2 { gap: 12px; }
   .nav-3 { gap: 8px; }
-  .nav-5 { font-size: 15px; letter-spacing: .1em; }
+  .nav-5 { font-size: 18px; }
   .nav-8 { padding: 6px 10px; }
   .nav-9 { font-size: 12.5px; padding: 8px 13px; }
 }

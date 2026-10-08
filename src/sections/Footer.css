@@ -1,8 +1,7 @@
 /* Footer — estilos generados a partir del diseño */
 
 .footer-1 {
-  border-top: 1px solid #22242f;
-  background: #131523;
+  background: var(--plum);
   padding: clamp(44px,6vw,72px) 0 28px;
 }
 
@@ -33,9 +32,9 @@
 
 .footer-6 {
   font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: .14em;
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: -.04em;
 }
 
 .footer-7 {
@@ -67,7 +66,7 @@
   justify-content: space-between;
   margin-top: clamp(30px,4vw,52px);
   padding-top: 20px;
-  border-top: 1px solid #22242f;
+  border-top: 1px solid var(--color-divider);
   font-size: 12.5px;
   color: var(--color-neutral-600);
 }

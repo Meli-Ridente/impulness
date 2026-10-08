@@ -11,7 +11,7 @@ export default function Nav() {
       <div className="nav-2">
         <a className="nav-3" href="#top">
           <img className="nav-4" src={logo} alt="Impulness" decoding="async" />
-          <span className="nav-5">IMPULNESS</span>
+          <span className="nav-5">impulness</span>
         </a>
         <nav className="nav-6">
           <a className="nav-7" href="#top">{t("Inicio", "Home")}</a>

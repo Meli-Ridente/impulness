@@ -7,7 +7,7 @@ export default function Metrics() {
   const { t } = useLang()
 
   return (
-    <section className="metrics-1">
+    <section className="metrics-1 theme-dark">
       <div className="metrics-2"></div>
       <div className="metrics-3">
         <Fx as="div" rv>

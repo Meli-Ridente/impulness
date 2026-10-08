@@ -19,7 +19,7 @@
 }
 
 .plans-4 {
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 11px;
   letter-spacing: .14em;
   text-transform: uppercase;
@@ -27,10 +27,10 @@
 
 .plans-5 {
   font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: clamp(28px,3.4vw,46px);
+  font-weight: 800;
+  font-size: clamp(36px,4.8vw,66px);
   line-height: 1.07;
-  letter-spacing: -.03em;
+  letter-spacing: -.045em;
   margin: 18px 0 0;
   max-width: 22ch;
 }
@@ -54,12 +54,13 @@
   flex-direction: column;
   border-radius: var(--radius-lg);
   padding: clamp(22px,2.4vw,34px);
-  background: linear-gradient(160deg,#1c1f2e,#191b28);
-  border: 1px solid #2b2e3d;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--card-border);
   transition: border-color .35s ease,transform .35s ease;
 }
 .plans-8:hover {
-  border-color: var(--color-accent-700);
+  border-color: var(--card-hover-border);
   transform: translateY(-4px);
 }
 
@@ -79,9 +80,9 @@
 
 .plans-11 {
   font-family: var(--font-heading);
-  font-weight: 500;
+  font-weight: 800;
   font-size: clamp(34px,4vw,52px);
-  letter-spacing: -.03em;
+  letter-spacing: -.045em;
   line-height: 1;
 }
 
@@ -100,7 +101,7 @@
   gap: 11px;
   margin: 24px 0 26px;
   padding-top: 22px;
-  border-top: 1px solid #2b2e3d;
+  border-top: 1px solid var(--color-divider);
   font-size: 14.5px;
   line-height: 1.5;
   color: var(--color-neutral-300);
@@ -117,7 +118,7 @@
 
 .plans-17 {
   margin-top: auto;
-  border-radius: 999px;
+  border-radius: 10px;
   padding: 12px 20px;
 }
 
@@ -127,9 +128,11 @@
   flex-direction: column;
   border-radius: var(--radius-lg);
   padding: clamp(22px,2.4vw,34px);
-  background: linear-gradient(160deg,#20223a,#191b28);
-  border: 1px solid var(--color-accent-700);
-  box-shadow: 0 0 44px rgba(145,132,217,.16);
+  background: #fff;
+  color: var(--plum);
+  border: 0;
+  box-shadow: 0 24px 60px rgba(15,0,30,.4);
+  transform: rotate(-1deg);
   transition: border-color .35s ease,transform .35s ease;
 }
 .plans-18:hover {
@@ -140,35 +143,35 @@
   position: absolute;
   top: 18px;
   right: 18px;
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 11px;
 }
 
 .plans-20 {
   margin-top: auto;
-  border-radius: 999px;
+  border-radius: 10px;
   padding: 12px 20px;
-  background: linear-gradient(120deg,rgba(43,79,245,.2),rgba(177,60,232,.2));
 }
 
 .plans-21 {
   border-radius: var(--radius-lg);
   padding: clamp(22px,2.4vw,34px);
-  background: linear-gradient(160deg,#1c1f2e,#191b28);
-  border: 1px solid #2b2e3d;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--card-border);
   display: flex;
   flex-direction: column;
   transition: border-color .35s ease,transform .35s ease;
 }
 .plans-21:hover {
-  border-color: var(--color-accent-700);
+  border-color: var(--card-hover-border);
   transform: translateY(-4px);
 }
 
 .plans-22 {
   margin: 24px 0 0;
   padding-top: 22px;
-  border-top: 1px solid #2b2e3d;
+  border-top: 1px solid var(--color-divider);
   font-size: 14.5px;
   line-height: 1.65;
   color: var(--color-neutral-400);
@@ -180,6 +183,22 @@
 }
 
 .plans-24 {
-  border-radius: 999px;
+  border-radius: 10px;
   padding: 12px 20px;
 }
+
+/* plan destacado: tarjeta blanca sobre el morado (como "12 publicaciones" en los posts) */
+.plans-18 .plans-9 { color: var(--color-neutral-500); }
+.plans-18 .plans-12 { color: var(--color-neutral-500); }
+.plans-18 .plans-13 { color: var(--blue); }
+.plans-18 .plans-11 { color: var(--blue); }
+.plans-18 .plans-14 { color: #442c5c; border-top-color: rgba(42,10,61,.12); }
+.plans-18 .plans-16 { color: var(--blue); }
+.plans-18 .tag-accent { background: var(--blue); color: #fff; }
+.plans-18 .btn-primary { background: var(--blue); border-color: var(--blue); color: #fff; box-shadow: 0 12px 28px rgba(42,67,255,.32); }
+.plans-18 .btn-primary:hover { background: var(--blue-600); }
+.plans-18:hover { transform: rotate(-1deg) translateY(-4px); }
+
+/* precios grandes y gruesos */
+.plans-11 { letter-spacing: -.05em; }
+.plans-16 { color: var(--lav-300); font-weight: 700; }
