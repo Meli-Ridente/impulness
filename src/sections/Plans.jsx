@@ -7,12 +7,12 @@ export default function Plans() {
   const { t } = useLang()
 
   return (
-    <section className="plans-1" id="planes">
+    <section className="plans-1 theme-dark" id="planes">
       <div className="plans-2">
         <div className="plans-3">
           <Fx as="div" rv>
             <div className="tag tag-outline plans-4">{t("Planes mensuales", "Monthly plans")}</div>
-            <h2 className="plans-5">{t("Todo en un mismo sistema.", "Everything in one system.")}</h2>
+            <h2 className="plans-5">{t("Todo en un", "Everything in")} <span className="script">{t("mismo sistema.", "one system.")}</span></h2>
           </Fx>
           <Fx as="p" rv delay={90} className="plans-6">
             {t("Web, campañas en Meta y gestión de redes trabajando juntas, no por separado. Empieza con un diagnóstico gratuito por WhatsApp: en un vídeo corto te decimos qué está fallando y qué haríamos distinto.", "Web, Meta campaigns and social media working together, not separately. Start with a free diagnosis on WhatsApp: in a short video we tell you what isn't working and what we would do differently.")}

@@ -23,7 +23,7 @@ export default function Reels() {
       <div className="reels-2">
         <Fx as="div" rv className="reels-3">
           <a className="tag tag-accent reels-4" href="https://www.instagram.com/impulness.es/" target="_blank" rel="noopener">@impulness.es</a>
-          <h2 className="reels-5">{t("Contenido que no solo gusta, convierte.", "Content that doesn't just get likes — it converts.")}</h2>
+          <h2 className="reels-5">{t("Contenido que no solo gusta,", "Content that doesn't just get likes —")} <span className="hl hl-blue">{t("convierte.", "it converts.")}</span></h2>
           <p className="reels-6">
             {t("Algunos de los Reels que grabamos y editamos para nuestros clientes: formatos verticales pensados para hacer crecer marcas y atraer clientes.", "Some of the Reels we shoot and edit for our clients: vertical formats built to grow brands and attract customers.")}
           </p>

@@ -1,0 +1,313 @@
+/*
+ * Estilo de marca Impulness — el mismo lenguaje visual que los posts de redes:
+ * fondos lavanda, tipografía muy gruesa en berenjena, acentos manuscritos en azul eléctrico,
+ * palabras resaltadas en recuadros, notas tipo pósit, destellos ✦ y tarjetas blancas.
+ *
+ * Va fuera de @layer ds, así que estos tokens ganan a los del sistema base (global.css).
+ * Las secciones oscuras (morado intenso) llevan la clase .theme-dark, que reasigna los tokens.
+ */
+
+:root {
+  /* paleta de marca */
+  --lav-50: #f6f3ff;
+  --lav-100: #efeaff;
+  --lav-200: #ddd3ff;
+  --lav-300: #cbbdfc;
+  --lav-400: #b6a4f6;
+  --plum: #2a0a3d;
+  --plum-700: #3b0d55;
+  --plum-600: #4f1470;
+  --violet: #7a2fc0;
+  --blue: #2a43ff;
+  --blue-600: #1d33d9;
+
+  /* tipografías */
+  --font-display: 'Bricolage Grotesque Variable', 'Inter', system-ui, sans-serif;
+  --font-script: 'Caveat Brush', 'Segoe Print', cursive;
+  --font-heading: var(--font-display);
+
+  /* tokens del sistema base, versión clara */
+  --color-bg: var(--lav-100);
+  --color-surface: #fff;
+  --color-text: var(--plum);
+  --color-accent: var(--blue);
+  --color-divider: rgba(42,10,61,.14);
+
+  --color-neutral-100: #2a0a3d;
+  --color-neutral-200: #3a1d50;
+  --color-neutral-300: #442c5c;
+  --color-neutral-400: #56436d;
+  --color-neutral-500: #6c5a83;
+  --color-neutral-600: #85759b;
+  --color-neutral-700: #a596ba;
+  --color-neutral-800: #d8cdf6;
+  --color-neutral-900: #ece6ff;
+
+  --color-accent-100: #ffffff;
+  --color-accent-200: var(--blue-600);
+  --color-accent-300: var(--blue);
+  --color-accent-400: #5a6cff;
+  --color-accent-500: var(--violet);
+  --color-accent-600: #9a7ce8;
+  --color-accent-700: #a48ff0;
+  --color-accent-800: var(--blue);
+  --color-accent-900: var(--lav-200);
+
+  /* tarjetas */
+  --card-bg: #fff;
+  --card-border: rgba(42,10,61,.06);
+  --card-shadow: 0 14px 34px rgba(74,39,140,.13), 0 2px 6px rgba(74,39,140,.06);
+  --card-shadow-hover: 0 24px 50px rgba(74,39,140,.2), 0 4px 10px rgba(74,39,140,.08);
+  --card-hover-border: rgba(42,43,255,.35);
+
+  --radius-lg: 10px;
+  --radius-md: 10px;
+}
+
+/* Secciones en morado intenso (como el post "cómo organizarlo") */
+.theme-dark {
+  --color-text: #fff;
+  --color-divider: rgba(255,255,255,.18);
+
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #f4eefc;
+  --color-neutral-300: #eadff7;
+  --color-neutral-400: #d8c9ec;
+  --color-neutral-500: #bfaadb;
+  --color-neutral-600: #a28cc2;
+  --color-neutral-700: #8a72ad;
+  --color-neutral-800: rgba(255,255,255,.14);
+
+  --color-accent-100: var(--plum);
+  --color-accent-200: #ffffff;
+  --color-accent-300: var(--lav-300);
+  --color-accent-700: rgba(255,255,255,.45);
+  --color-accent-800: var(--lav-300);
+
+  --card-bg: rgba(255,255,255,.09);
+  --card-border: rgba(255,255,255,.16);
+  --card-shadow: none;
+  --card-shadow-hover: 0 22px 50px rgba(15,0,30,.45);
+  --card-hover-border: rgba(255,255,255,.4);
+
+  color: var(--color-text);
+  background:
+    radial-gradient(60% 70% at 85% 0%, rgba(140,60,210,.55), transparent 70%),
+    linear-gradient(160deg, var(--plum-700), var(--plum-600) 55%, #5e1a86);
+}
+
+/* Fondo lavanda con formas suaves (como los posts 1 y 4) */
+.bg-blobs {
+  position: relative;
+  isolation: isolate;
+  background: var(--lav-300);
+}
+.bg-blobs::before,
+.bg-blobs::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.bg-blobs::before {
+  width: min(70vw, 900px);
+  aspect-ratio: 1;
+  right: -18%;
+  top: -30%;
+  background: var(--lav-200);
+  opacity: .75;
+}
+.bg-blobs::after {
+  width: min(80vw, 1000px);
+  aspect-ratio: 1;
+  left: -22%;
+  bottom: -45%;
+  background: var(--lav-400);
+  opacity: .45;
+}
+
+/* ── Titulares: muy gruesos, compactos ── */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -.045em;
+}
+
+/* Acento manuscrito en azul (en secciones oscuras, lavanda claro) */
+.script {
+  font-family: var(--font-script);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  color: var(--blue);
+  display: inline-block;
+  transform: rotate(-1deg);
+  line-height: .9;
+  padding-right: .06em;
+}
+.theme-dark .script {
+  color: var(--lav-300);
+}
+
+/* Palabras resaltadas en recuadro (blanco, azul o berenjena), algo giradas */
+.hl {
+  display: inline-block;
+  padding: .02em .2em .08em;
+  margin: .04em 0;
+  line-height: 1;
+  border-radius: .12em;
+  transform: rotate(-1.5deg);
+}
+.hl-white { background: #fff; color: var(--plum); box-shadow: 0 10px 28px rgba(74,39,140,.14); }
+.hl-blue { background: var(--blue); color: #fff; box-shadow: 0 12px 30px rgba(42,67,255,.3); transform: rotate(-2deg); }
+.hl-plum { background: var(--plum); color: #fff; transform: rotate(1.5deg); }
+
+/* Nota tipo pósit con letra manuscrita */
+.note {
+  display: inline-block;
+  padding: 14px 20px 16px;
+  background: #fff;
+  color: var(--plum);
+  font-family: var(--font-script);
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.15;
+  border-radius: 4px;
+  box-shadow: 0 16px 34px rgba(74,39,140,.18), 0 2px 6px rgba(74,39,140,.08);
+  transform: rotate(-4deg);
+}
+
+/* Etiqueta de sección: mayúsculas espaciadas, como "EDICIÓN OCTUBRE" */
+.tag.tag-outline {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: var(--plum);
+  font-weight: 600;
+  letter-spacing: .18em;
+}
+.theme-dark .tag.tag-outline { color: #fff; }
+
+/* ── Etiquetas ── */
+.tag-accent { background: var(--blue); color: #fff; font-weight: 600; }
+.tag-neutral { background: var(--lav-100); color: var(--plum); }
+.theme-dark .tag-accent { background: var(--lav-300); color: var(--plum); }
+.theme-dark .tag-neutral { background: rgba(255,255,255,.12); color: #fff; }
+
+/* ── Botones: píldora azul y píldora blanca ── */
+.btn {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -.01em;
+}
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(42,67,255,.32);
+  transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+}
+.btn-primary:hover {
+  background: var(--blue-600);
+  box-shadow: 0 16px 36px rgba(42,67,255,.42);
+  transform: translateY(-2px);
+}
+.btn-secondary {
+  background: #fff;
+  border-color: transparent;
+  color: var(--plum);
+  box-shadow: 0 8px 22px rgba(74,39,140,.12);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.btn-secondary:hover {
+  background: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(74,39,140,.18);
+}
+.theme-dark .btn-secondary { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.28); color: #fff; box-shadow: none; }
+.theme-dark .btn-secondary:hover { background: rgba(255,255,255,.18); }
+.theme-dark .btn-primary { background: #fff; border-color: #fff; color: var(--plum); box-shadow: 0 12px 28px rgba(15,0,30,.35); }
+.theme-dark .btn-primary:hover { background: var(--lav-100); }
+
+/* ── Formularios ── */
+.field > span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--plum);
+}
+.input {
+  background: var(--lav-50);
+  border: 1.5px solid var(--lav-200);
+  border-radius: 10px;
+  color: var(--plum);
+  min-height: 44px;
+  padding: 10px 14px;
+}
+.input::placeholder { color: var(--color-neutral-600); }
+.input:hover { border-color: var(--lav-400); }
+.input:focus-visible { border-color: var(--blue); background: #fff; }
+
+/* ── Enlaces, foco y selección ── */
+a { color: var(--blue); }
+a:hover { color: var(--blue-600); }
+.theme-dark a { color: var(--lav-300); }
+.theme-dark a:hover { color: #fff; }
+:focus-visible { outline-color: var(--blue); }
+::selection { background: rgba(42,67,255,.22); }
+
+/* Foco de luz de las tarjetas y cursor, en tonos de marca */
+.fx-spot { background: radial-gradient(240px circle at 50% 50%, rgba(42,67,255,.08), transparent 70%); }
+.theme-dark .fx-spot { background: radial-gradient(240px circle at 50% 50%, rgba(255,255,255,.1), transparent 70%); }
+.cursor-ring { border-color: rgba(42,67,255,.55); }
+.cursor-dot { background: var(--blue); }
+
+/* en los títulos de sección la manuscrita va algo más grande para igualar la altura de la gruesa */
+h2 .script { font-size: 1.12em; }
+
+/* Halo de luz que sigue al cursor por toda la web (CursorGlow.jsx) */
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 105;
+  width: 560px;
+  height: 560px;
+  margin: -280px 0 0 -280px;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(circle, rgba(255,255,255,.2), rgba(255,255,255,.07) 38%, transparent 66%);
+  transition: opacity .4s ease;
+  will-change: transform;
+}
+@media (pointer: coarse) { .cursor-glow { display: none; } }
+
+/* Títulos de inicio de cada sección: mayúscula inicial y en una sola línea en pantallas anchas */
+h2.services-5,
+h2.plans-5,
+h2.cases-5,
+h2.reels-5,
+h2.testimonials-5,
+h2.contact-11 {
+  max-width: none;
+  font-size: clamp(28px,3.6vw,50px);
+  letter-spacing: -.035em;
+  line-height: 1.05;
+}
+@media (min-width: 1000px) {
+  h2.services-5,
+  h2.plans-5,
+  h2.cases-5,
+  h2.reels-5,
+  h2.testimonials-5,
+  h2.contact-11 { white-space: nowrap; }
+}
+/* los bloques de título ya no limitan el ancho */
+section .cases-3,
+section .reels-3,
+section .testimonials-3,
+section .contact-9 { max-width: none; }

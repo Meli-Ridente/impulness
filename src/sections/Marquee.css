@@ -1,35 +1,49 @@
-/* Marquee — estilos generados a partir del diseño */
+/* Marquee — cinta azul translúcida y girada, entera sobre el fondo claro
+   (si pisara la sección morada, la transparencia la vería de dos colores) */
+
+.marquee-wrap {
+  position: relative;
+  overflow: hidden;
+  /* lo justo para que la cinta girada no pise las secciones vecinas */
+  padding: clamp(40px,3.4vw,64px) 0;
+}
 
 .marquee-1 {
   position: relative;
   overflow: hidden;
-  padding: 14px 0;
-  border-top: 1px solid #22242f;
-  border-bottom: 1px solid #22242f;
-  background: #141625;
-  mask-image: linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
-  -webkit-mask-image: linear-gradient(90deg,transparent,#000 14%,#000 86%,transparent);
+  padding: 16px 0;
+  margin: 0 -6%;
+  background: rgba(42,67,255,.6);
+  transform: rotate(-3deg);
+  box-shadow: 0 14px 34px rgba(42,67,255,.16);
 }
 
 .marquee-2 {
   display: flex;
   width: max-content;
-  animation: impMarqueeRev 30s linear infinite;
+  animation: impMarqueeRev 60s linear infinite;
 }
 
 .marquee-3 {
   display: flex;
   align-items: center;
-  gap: clamp(26px,4vw,56px);
-  padding-right: clamp(26px,4vw,56px);
-  font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: clamp(13px,1.2vw,17px);
-  letter-spacing: .14em;
-  color: var(--color-neutral-600);
-  text-transform: uppercase;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(18px,1.8vw,26px);
+  letter-spacing: -.02em;
+  color: #fff;
+  text-transform: lowercase;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  gap: clamp(22px,3vw,44px);
+  padding-right: clamp(22px,3vw,44px);
+  white-space: nowrap;
 }
 
 .marquee-4 {
-  color: var(--color-accent-700);
+  color: #fff;
+  font-size: 1.1em;
 }

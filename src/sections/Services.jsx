@@ -2,6 +2,23 @@ import Fx from '../components/Fx'
 import { useLang } from '../i18n/LangContext'
 import './Services.css'
 
+// Iconos de línea (trazos estilo Lucide) para las tarjetas de servicio
+const ICONS = {
+  growth: <><polyline points="22 7 13.5 15.5 8.5 10.5 2 17" /><polyline points="16 7 22 7 22 13" /></>,
+  code: <><polyline points="16 18 22 12 16 6" /><polyline points="8 6 2 12 8 18" /></>,
+  instagram: <><rect x="2" y="2" width="20" height="20" rx="5" /><circle cx="12" cy="12" r="4" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></>,
+  camera: <><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /><circle cx="12" cy="13" r="3" /></>,
+  pen: <><path d="M12 19l7-7 3 3-7 7-3-3z" /><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z" /><path d="M2 2l7.586 7.586" /><circle cx="11" cy="11" r="2" /></>,
+}
+
+function Icon({ name }) {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+      {ICONS[name]}
+    </svg>
+  )
+}
+
 export default function Services() {
   const { t } = useLang()
 
@@ -11,7 +28,7 @@ export default function Services() {
         <div className="services-3">
           <Fx as="div" rv>
             <div className="tag tag-outline services-4">{t("Sistema Impulness 360°", "Impulness 360° system")}</div>
-            <h2 className="services-5">{t("Cinco servicios, un solo equipo", "Five services, one team")}</h2>
+            <h2 className="services-5">{t("Cinco servicios,", "Five services,")} <span className="script">{t("un solo equipo", "one team")}</span></h2>
           </Fx>
           <Fx as="p" rv delay={100} className="services-6">
             {t("No vendemos servicios aislados: la web, las campañas, las redes, la fotografía y el diseño trabajan como una sola maquinaria.", "We don't sell isolated services: web, ads, social media, photography and design work as one machine.")}
@@ -20,7 +37,7 @@ export default function Services() {
         <div className="services-7">
           <Fx as="article" rv variant="settle" tilt className="card fx-host services-8">
             <div className="services-9">
-              <div className="services-10">◎</div>
+              <div className="services-10"><Icon name="growth" /></div>
               <span className="tag tag-accent services-11">{t("Seguimiento real", "Real tracking")}</span>
             </div>
             <h3 className="services-12">Meta Ads</h3>
@@ -35,7 +52,7 @@ export default function Services() {
           </Fx>
           <Fx as="article" rv delay={90} variant="settle" tilt className="card fx-host services-8">
             <div className="services-9">
-              <div className="services-10">&lt;/&gt;</div>
+              <div className="services-10"><Icon name="code" /></div>
               <span className="tag tag-accent services-11">{t("Desde 250€", "From 250€")}</span>
             </div>
             <h3 className="services-12">{t("Desarrollo web", "Web development")}</h3>
@@ -48,9 +65,9 @@ export default function Services() {
               <span className="tag tag-neutral services-15">{t("SEO técnico", "Technical SEO")}</span>
             </div>
           </Fx>
-          <Fx as="article" rv delay={180} variant="settle" tilt className="card fx-host services-8">
+          <Fx as="article" rv delay={180} variant="settle" tilt className="card fx-host services-8 services-8--feature theme-dark">
             <div className="services-9">
-              <div className="services-10">◫</div>
+              <div className="services-10"><Icon name="instagram" /></div>
               <span className="tag tag-accent services-11">{t("Desde 300€/mes", "From 300€/mo")}</span>
             </div>
             <h3 className="services-12">{t("Gestión de redes sociales", "Social media management")}</h3>
@@ -65,7 +82,7 @@ export default function Services() {
           </Fx>
           <Fx as="article" rv delay={270} variant="settle" tilt className="card fx-host services-8">
             <div className="services-9">
-              <div className="services-10">◐</div>
+              <div className="services-10"><Icon name="camera" /></div>
               <span className="tag tag-accent services-11">{t("Contenido propio", "Original content")}</span>
             </div>
             <h3 className="services-12">{t("Fotografía", "Photography")}</h3>
@@ -80,7 +97,7 @@ export default function Services() {
           </Fx>
           <Fx as="article" rv delay={360} variant="settle" tilt className="card fx-host services-8">
             <div className="services-9">
-              <div className="services-10">✦</div>
+              <div className="services-10"><Icon name="pen" /></div>
               <span className="tag tag-accent services-11">{t("Marca coherente", "Consistent brand")}</span>
             </div>
             <h3 className="services-12">{t("Diseño gráfico", "Graphic design")}</h3>

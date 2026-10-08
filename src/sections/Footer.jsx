@@ -7,13 +7,13 @@ export default function Footer() {
   const { t } = useLang()
 
   return (
-    <footer className="footer-1">
+    <footer className="footer-1 theme-dark">
       <div className="footer-2">
         <div className="footer-3">
           <div>
             <div className="footer-4">
               <img className="footer-5" src={logo} alt="Impulness" loading="lazy" decoding="async" />
-              <span className="footer-6">IMPULNESS</span>
+              <span className="footer-6">impulness</span>
             </div>
             <p className="footer-7">
               {t("Impulness — Agencia de marketing digital en Barcelona.", "Impulness — Digital marketing agency in Barcelona.")}

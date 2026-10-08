@@ -1,6 +1,7 @@
 import { CUSTOM_CURSOR, SHOW_PLANES, SHOW_REELS } from './config'
 import { LangProvider } from './i18n/LangContext'
 import CustomCursor from './components/CustomCursor'
+import CursorGlow from './components/CursorGlow'
 
 import Progress from './sections/Progress'
 import Nav from './sections/Nav'
@@ -34,6 +35,7 @@ export default function App() {
       </main>
       <Footer />
       <FloatingWhatsApp />
+      <CursorGlow />
       {CUSTOM_CURSOR && <CustomCursor />}
     </LangProvider>
   )

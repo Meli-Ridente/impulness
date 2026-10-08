@@ -2,7 +2,7 @@
 
 .services-1 {
   position: relative;
-  padding: clamp(70px,9vw,124px) 0;
+  padding: clamp(70px,9vw,124px) 0 0;
 }
 
 .services-2 {
@@ -19,7 +19,7 @@
 }
 
 .services-4 {
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 11px;
   letter-spacing: .14em;
   text-transform: uppercase;
@@ -27,10 +27,10 @@
 
 .services-5 {
   font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: clamp(30px,3.9vw,52px);
-  line-height: 1.06;
-  letter-spacing: -.03em;
+  font-weight: 800;
+  font-size: clamp(36px,4.8vw,66px);
+  line-height: 1;
+  letter-spacing: -.045em;
   margin: 18px 0 0;
   max-width: 20ch;
 }
@@ -52,18 +52,19 @@
 .services-8 {
   border-radius: var(--radius-lg);
   padding: clamp(20px,2.2vw,30px);
-  background: linear-gradient(160deg,#1c1f2e,#191b28);
-  border: 1px solid #2b2e3d;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--card-border);
   transition: transform .4s cubic-bezier(.2,.7,.2,1),border-color .4s ease,box-shadow .4s ease;
 }
 .services-8:hover {
-  border-color: var(--color-accent-700);
-  box-shadow: 0 22px 50px rgba(0,0,0,.5);
+  border-color: var(--card-hover-border);
+  box-shadow: var(--card-shadow-hover);
 }
 
 .services-9 {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 14px;
 }
@@ -74,22 +75,24 @@
   border-radius: var(--radius-md);
   display: grid;
   place-items: center;
-  background: rgba(145,132,217,.12);
-  border: 1px solid rgba(145,132,217,.28);
+  background: var(--blue);
+  border: 0;
   font-size: 17px;
-  color: var(--color-accent-200);
+  color: #fff;
+  box-shadow: 0 8px 18px rgba(42,67,255,.28);
+  flex-shrink: 0;
 }
 
 .services-11 {
-  border-radius: 999px;
+  border-radius: 10px;
   font-size: 11px;
 }
 
 .services-12 {
   font-family: var(--font-heading);
-  font-weight: 500;
-  font-size: 21px;
-  letter-spacing: -.02em;
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: -.04em;
   margin: 20px 0 10px;
 }
 
@@ -98,6 +101,7 @@
   font-size: 14.5px;
   line-height: 1.65;
   color: var(--color-neutral-400);
+  flex-grow: 1;
 }
 
 .services-14 {
@@ -109,4 +113,19 @@
 
 .services-15 {
   font-size: 11px;
+}
+
+/* tarjeta destacada en berenjena (como "llega Halloween" en los posts) */
+.services-8--feature {
+  border-color: transparent;
+  background: linear-gradient(160deg,var(--plum-700),var(--plum-600));
+  box-shadow: 0 18px 40px rgba(59,13,85,.3);
+}
+.services-8--feature .services-10 {
+  background: #fff;
+  color: var(--plum);
+  box-shadow: none;
+}
+.services-8--feature .services-13 {
+  color: var(--color-neutral-300);
 }
